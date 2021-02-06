@@ -4,6 +4,84 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>30 Days Of React Challenge</title>
+    <style>
+         * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      html,
+      body {
+        height: 100%;
+        line-height: 1.5;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        color: black;
+      }
+
+      .root {
+        min-height: 100%;
+        position: relative;
+      }
+
+      .header-wrapper,
+      .main-wrapper,
+      .footer-wrapper {
+        width: 85%;
+        margin: auto;
+      }
+
+      .header-wrapper,
+      .main-wrapper {
+        padding: 10px;
+        margin: 2px auto;
+      }
+
+      h1 {
+        font-size: 70px;
+        font-weight: 300;
+      }
+
+      h2,
+      h3 {
+        font-weight: 300;
+      }
+
+      header {
+        background-color: #61dbfb;
+        padding: 10px;
+      }
+
+      main {
+        padding: 10px;
+        padding-bottom: 60px;
+        /* Height of the footer */
+      }
+
+      ul {
+        margin-left: 15px;
+      }
+
+      ul li {
+        list-style: none;
+      }
+
+      footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        /* Height of the footer */
+        background: #6cf;
+      }
+
+      .footer-wrapper {
+        font-weight: 400;
+        text-align: center;
+        line-height: 60px;
+      }
+    </style>
   </head>
 
   <body>
@@ -25,24 +103,35 @@
       // JSX element
       const header=(
           <header>
-            <h1>30 days of s coding challenge</h1>
-            <h2>rabiya basri</h2>
+            <div className='header-wrapper'>
+            <h1>Welcome to 30 days of React</h1>
+            <h2>Getting Started React</h2>
+            <h3>JavaScript Library</h3>
+            <p>rabiya basri</p>
             <small>5th feb 2021</small>
+            </div>
             </header>
       )
+      
       const main = (
           <main>
-            <p>pre requireties to get stated with react</p>
+            <div className='main-wrapper'>
+            <p>pre requireties to get stated{' '}<strong><em> with react</em></strong>...</p>
             <ul>
                 <li>html</li>
                 <li>css</li>
                 <li>javascript</li>
                 </ul>
+                </div>
             </main>
       )
+     
+      
       const footer = (
           <footer>
+            <div className='footer-wrapper'>
             <p>copyrights @rabiyabasri 2021</p>
+            </div>
             </footer>
       )
             const app = (
